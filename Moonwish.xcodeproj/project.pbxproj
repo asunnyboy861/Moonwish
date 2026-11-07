@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		036EE46D3E2D3B48E4FA7D99 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD36967E91CE06235E69F19 /* AppConfig.swift */; };
+		05E069A5302E63B40CD4D49E /* AudioRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B31F9644A84ACB05690A3E /* AudioRenderer.swift */; };
+		09867DB0AB6E47D154647248 /* PresetCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB66D5DBCF4EB9BBB549CE0 /* PresetCatalog.swift */; };
+		108948C83175F5141614FC2C /* CelebrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5CE5B8601C10547F353BB7 /* CelebrationView.swift */; };
+		2A9E5C6C678DAD4354F3CFEC /* WishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BAC6111629336D60433EBF /* WishDetailView.swift */; };
+		2E3F1C64ED8DC56543B42241 /* SpeechDictation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6945A1140B2DC1CED791FD6A /* SpeechDictation.swift */; };
+		3072BC4C06E94AB69871F1DD /* AIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B6EBD6141779EAD5E18D37 /* AIService.swift */; };
+		31B16EFD5CBBC9D8E24007E6 /* PlaybackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DAC2F00E87E849C89B688C /* PlaybackService.swift */; };
+		3360BC071199F3BA25C322D8 /* WeeklyReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FC43DEFF790047CFAB6DD /* WeeklyReportView.swift */; };
+		38736C77396C0EA6C33F895A /* TonightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E414E15CF89D13D01D4D598 /* TonightView.swift */; };
+		409C65869210D1C36F70FE84 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BB7164C9B6C1707AD7E17 /* RootTabView.swift */; };
+		46161A65954E589C20E71E83 /* VoiceCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49E5A3241294E4066F8CF47 /* VoiceCatalog.swift */; };
+		469E0A02012B1FCCB88865C4 /* SupportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32492384EE42994AF28B23F7 /* SupportService.swift */; };
+		4E3AEFF45B6CA26F6962DB3D /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B3BA880C2ADA6094402530 /* KeychainHelper.swift */; };
+		4FEAEA9C3209A22D0CF81B6D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754A51DADD4ED5A07D254D85 /* Theme.swift */; };
+		518900F0BB81E4F33DDCCC09 /* MoonwishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9633D6D6AD659551BF4EEC /* MoonwishApp.swift */; };
+		552118273B678E0E913B678C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 20177CEBAAFAA1993811D272 /* PrivacyInfo.xcprivacy */; };
+		661D60F7EEBBFB95C5B87A46 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BD0AF70FABD4C89F7FB992 /* OnboardingView.swift */; };
+		67A30231BA49CA3D0F479369 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610FEB85900D573558DC7E51 /* ProfileView.swift */; };
+		69B162D4111434EB1702C079 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE989027106EF0254183E1 /* PaywallView.swift */; };
+		6C9A9056DB5C6DC5FA9C2FEF /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08D6190C761B293C39D87C3 /* BoardView.swift */; };
+		748EB94C7CE5ECB46F6F419B /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCA73A65D9A6E63E46A4C2 /* ExportService.swift */; };
+		7992E6288F67148B23DE48F2 /* PresetPlayback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D14288A5255BDF0D54B7FA0 /* PresetPlayback.swift */; };
+		7AC434F8EA81A6EB5FE0355A /* AppleIntelligenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD93770D730B1D663BA2FB7D /* AppleIntelligenceService.swift */; };
+		7D2342D337146966F2671F77 /* SoundscapeLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C89A87BC312B82948941F6 /* SoundscapeLibrary.swift */; };
+		8135612736AFEA3814046C4A /* WishComposerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160EE9A4E07FAA6C55A7F59C /* WishComposerViewModel.swift */; };
+		841A3C76E4EFE68CD5DE56D4 /* MoonPhaseCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0AB3FD1F13C63DF21871A /* MoonPhaseCalculator.swift */; };
+		94739CA41D6EC55EE7C53A98 /* MoonCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6DB683D544D7332BC48987 /* MoonCanvas.swift */; };
+		9620A4945AF017D48A98060A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52633F81D7D6432D05C16DF4 /* Assets.xcassets */; };
+		A1A0DD6E29708A2B07E40D1D /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17FD47285F77976DD934F47 /* PurchaseManager.swift */; };
+		A3C81C394E53FF18F0291BCB /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E81184131F9C63BF3EDD6B /* PlayerView.swift */; };
+		A8682E4ACEE286B3BBC06AB9 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718A89DA65746202EF60402A /* DataStore.swift */; };
+		AFA8A5FFFF1A0C8A03608BE5 /* MoonwishCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB817F21E4CB5108859D0FBD /* MoonwishCoreTests.swift */; };
+		B2334EFC05DAF1F5502E6AC1 /* CloudAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C972DD3286CCDF1663CFE /* CloudAIService.swift */; };
+		C43E76A07490515F428B43B2 /* ChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740085202DA56A0EA437BC9 /* ChannelView.swift */; };
+		C82149931FA4EDCC7F249B94 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2B0DE50B0F5247ECAD3C64 /* JournalView.swift */; };
+		CC20BB9A179C66CBA48E49D5 /* BYOAPISettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD85F2E1E58B6DB61F968EB /* BYOAPISettingsView.swift */; };
+		D30BCA60D90B740C53BCA455 /* ContactSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DDD296D096F0F8C4113B95 /* ContactSupportView.swift */; };
+		D79DA8D92F57564C4ED1E29F /* Wish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B4B8F3C29675CF5F7A640 /* Wish.swift */; };
+		E0A69C5A51F89ECEBE3FC7CB /* WishComposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6501DAB9223A01949DCD0E /* WishComposerView.swift */; };
+		F4CD6A7DB6040DA123E68F32 /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7A758C57E6987BE53D5C /* Records.swift */; };
+		F66F22E9C75D1CE32024AC16 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C2219E6BD729A798496F1A /* NotificationService.swift */; };
+		F74AB980EC172272839E0992 /* GLMProxySecret.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65AA06AA55E4931F5119A691 /* GLMProxySecret.txt */; };
+		FA969B1FA02F98BE59948B24 /* AIEngineRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B830D97E4AF3371B1EACF /* AIEngineRouter.swift */; };
+		FECE7CF42EF89B15B716C808 /* StreakEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB9CEB02A1D910B41665B9 /* StreakEngine.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1E6B0B5C16A119CBBB085C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC50C6A909F6C529E210539E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 058718B842F35B0DA07A9683;
+			remoteInfo = Moonwish;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02DDD296D096F0F8C4113B95 /* ContactSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSupportView.swift; sourceTree = "<group>"; };
+		07F03D1AF289E2620F9AE366 /* MoonwishTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MoonwishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		160EE9A4E07FAA6C55A7F59C /* WishComposerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishComposerViewModel.swift; sourceTree = "<group>"; };
+		1951C4E9A77AF00106850C66 /* Moonwish.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Moonwish.entitlements; sourceTree = "<group>"; };
+		20177CEBAAFAA1993811D272 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		234B830D97E4AF3371B1EACF /* AIEngineRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIEngineRouter.swift; sourceTree = "<group>"; };
+		2ABCA73A65D9A6E63E46A4C2 /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
+		31B3BA880C2ADA6094402530 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		32492384EE42994AF28B23F7 /* SupportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportService.swift; sourceTree = "<group>"; };
+		337C972DD3286CCDF1663CFE /* CloudAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudAIService.swift; sourceTree = "<group>"; };
+		33BAC6111629336D60433EBF /* WishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishDetailView.swift; sourceTree = "<group>"; };
+		36B31F9644A84ACB05690A3E /* AudioRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRenderer.swift; sourceTree = "<group>"; };
+		42E81184131F9C63BF3EDD6B /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		4D3FC43DEFF790047CFAB6DD /* WeeklyReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyReportView.swift; sourceTree = "<group>"; };
+		51C89A87BC312B82948941F6 /* SoundscapeLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundscapeLibrary.swift; sourceTree = "<group>"; };
+		52633F81D7D6432D05C16DF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		610FEB85900D573558DC7E51 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		65AA06AA55E4931F5119A691 /* GLMProxySecret.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = GLMProxySecret.txt; sourceTree = "<group>"; };
+		6945A1140B2DC1CED791FD6A /* SpeechDictation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechDictation.swift; sourceTree = "<group>"; };
+		6E414E15CF89D13D01D4D598 /* TonightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TonightView.swift; sourceTree = "<group>"; };
+		718A89DA65746202EF60402A /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		754A51DADD4ED5A07D254D85 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		7740085202DA56A0EA437BC9 /* ChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelView.swift; sourceTree = "<group>"; };
+		786BB7164C9B6C1707AD7E17 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		7A5CE5B8601C10547F353BB7 /* CelebrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrationView.swift; sourceTree = "<group>"; };
+		7ACE989027106EF0254183E1 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		842B4B8F3C29675CF5F7A640 /* Wish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wish.swift; sourceTree = "<group>"; };
+		93C2219E6BD729A798496F1A /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		9D14288A5255BDF0D54B7FA0 /* PresetPlayback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetPlayback.swift; sourceTree = "<group>"; };
+		9DFB9CEB02A1D910B41665B9 /* StreakEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakEngine.swift; sourceTree = "<group>"; };
+		9FB47F8BE35BE32E5788FF78 /* Moonwish.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Moonwish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A08D6190C761B293C39D87C3 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		AB9633D6D6AD659551BF4EEC /* MoonwishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonwishApp.swift; sourceTree = "<group>"; };
+		ABD36967E91CE06235E69F19 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		ADB66D5DBCF4EB9BBB549CE0 /* PresetCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetCatalog.swift; sourceTree = "<group>"; };
+		B6E0AB3FD1F13C63DF21871A /* MoonPhaseCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonPhaseCalculator.swift; sourceTree = "<group>"; };
+		B7BD0AF70FABD4C89F7FB992 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		BA6DB683D544D7332BC48987 /* MoonCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonCanvas.swift; sourceTree = "<group>"; };
+		C17FD47285F77976DD934F47 /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		C1B6EBD6141779EAD5E18D37 /* AIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIService.swift; sourceTree = "<group>"; };
+		C60EDA0308FA847B6E12DF31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CB817F21E4CB5108859D0FBD /* MoonwishCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonwishCoreTests.swift; sourceTree = "<group>"; };
+		CCD85F2E1E58B6DB61F968EB /* BYOAPISettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BYOAPISettingsView.swift; sourceTree = "<group>"; };
+		CD93770D730B1D663BA2FB7D /* AppleIntelligenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleIntelligenceService.swift; sourceTree = "<group>"; };
+		D9FD7A758C57E6987BE53D5C /* Records.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
+		DD6501DAB9223A01949DCD0E /* WishComposerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishComposerView.swift; sourceTree = "<group>"; };
+		E5DAC2F00E87E849C89B688C /* PlaybackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackService.swift; sourceTree = "<group>"; };
+		ED2B0DE50B0F5247ECAD3C64 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		F49E5A3241294E4066F8CF47 /* VoiceCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCatalog.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		02B55CF24C522E3494A287C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9FD7A758C57E6987BE53D5C /* Records.swift */,
+				842B4B8F3C29675CF5F7A640 /* Wish.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		153651E4D2CCEE93A08A62A8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				234B830D97E4AF3371B1EACF /* AIEngineRouter.swift */,
+				C1B6EBD6141779EAD5E18D37 /* AIService.swift */,
+				ABD36967E91CE06235E69F19 /* AppConfig.swift */,
+				CD93770D730B1D663BA2FB7D /* AppleIntelligenceService.swift */,
+				36B31F9644A84ACB05690A3E /* AudioRenderer.swift */,
+				337C972DD3286CCDF1663CFE /* CloudAIService.swift */,
+				718A89DA65746202EF60402A /* DataStore.swift */,
+				2ABCA73A65D9A6E63E46A4C2 /* ExportService.swift */,
+				31B3BA880C2ADA6094402530 /* KeychainHelper.swift */,
+				B6E0AB3FD1F13C63DF21871A /* MoonPhaseCalculator.swift */,
+				93C2219E6BD729A798496F1A /* NotificationService.swift */,
+				E5DAC2F00E87E849C89B688C /* PlaybackService.swift */,
+				ADB66D5DBCF4EB9BBB549CE0 /* PresetCatalog.swift */,
+				9D14288A5255BDF0D54B7FA0 /* PresetPlayback.swift */,
+				C17FD47285F77976DD934F47 /* PurchaseManager.swift */,
+				51C89A87BC312B82948941F6 /* SoundscapeLibrary.swift */,
+				6945A1140B2DC1CED791FD6A /* SpeechDictation.swift */,
+				9DFB9CEB02A1D910B41665B9 /* StreakEngine.swift */,
+				32492384EE42994AF28B23F7 /* SupportService.swift */,
+				F49E5A3241294E4066F8CF47 /* VoiceCatalog.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		201417498D30B28CA0FD6D24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B7BD0AF70FABD4C89F7FB992 /* OnboardingView.swift */,
+				786BB7164C9B6C1707AD7E17 /* RootTabView.swift */,
+				CD2CCC6E856C10B407C065F7 /* Board */,
+				40A3356E1D0F90B50F452277 /* Channel */,
+				F9B24B1590666CA5E5448D6C /* Composer */,
+				34AE7F7A56EBFC936E2EB9AF /* Journal */,
+				278EA45457DFE26C073FE14C /* Paywall */,
+				B8802A249CA0065575CA9B57 /* Player */,
+				E8C5B2E78D43A8D2E6DD4FFD /* Profile */,
+				C43C042B59CAF0EB952F79A1 /* Tonight */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		278EA45457DFE26C073FE14C /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				7ACE989027106EF0254183E1 /* PaywallView.swift */,
+			);
+			path = Paywall;
+			sourceTree = "<group>";
+		};
+		34AE7F7A56EBFC936E2EB9AF /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+				ED2B0DE50B0F5247ECAD3C64 /* JournalView.swift */,
+			);
+			path = Journal;
+			sourceTree = "<group>";
+		};
+		3C4642AC9A2BEA5277366238 = {
+			isa = PBXGroup;
+			children = (
+				733663E675CF5BEF80925751 /* Moonwish */,
+				AE315F11588D79C2509B0E09 /* MoonwishTests */,
+				703479236EE63C8D7B5A884A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40A3356E1D0F90B50F452277 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				7A5CE5B8601C10547F353BB7 /* CelebrationView.swift */,
+				7740085202DA56A0EA437BC9 /* ChannelView.swift */,
+				33BAC6111629336D60433EBF /* WishDetailView.swift */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		44E5B5E18D1ABF9434D387CA /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				BA6DB683D544D7332BC48987 /* MoonCanvas.swift */,
+				754A51DADD4ED5A07D254D85 /* Theme.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		703479236EE63C8D7B5A884A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FB47F8BE35BE32E5788FF78 /* Moonwish.app */,
+				07F03D1AF289E2620F9AE366 /* MoonwishTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		733663E675CF5BEF80925751 /* Moonwish */ = {
+			isa = PBXGroup;
+			children = (
+				65AA06AA55E4931F5119A691 /* GLMProxySecret.txt */,
+				C60EDA0308FA847B6E12DF31 /* Info.plist */,
+				1951C4E9A77AF00106850C66 /* Moonwish.entitlements */,
+				20177CEBAAFAA1993811D272 /* PrivacyInfo.xcprivacy */,
+				9249904A8CDCB9B4A2B9CD99 /* App */,
+				44E5B5E18D1ABF9434D387CA /* DesignSystem */,
+				02B55CF24C522E3494A287C7 /* Models */,
+				AAC3C7D7896E64E4C4C9E292 /* Resources */,
+				153651E4D2CCEE93A08A62A8 /* Services */,
+				201417498D30B28CA0FD6D24 /* Views */,
+			);
+			path = Moonwish;
+			sourceTree = "<group>";
+		};
+		9249904A8CDCB9B4A2B9CD99 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AB9633D6D6AD659551BF4EEC /* MoonwishApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AAC3C7D7896E64E4C4C9E292 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52633F81D7D6432D05C16DF4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE315F11588D79C2509B0E09 /* MoonwishTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB817F21E4CB5108859D0FBD /* MoonwishCoreTests.swift */,
+			);
+			path = MoonwishTests;
+			sourceTree = "<group>";
+		};
+		B8802A249CA0065575CA9B57 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				42E81184131F9C63BF3EDD6B /* PlayerView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		C43C042B59CAF0EB952F79A1 /* Tonight */ = {
+			isa = PBXGroup;
+			children = (
+				6E414E15CF89D13D01D4D598 /* TonightView.swift */,
+			);
+			path = Tonight;
+			sourceTree = "<group>";
+		};
+		CD2CCC6E856C10B407C065F7 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				A08D6190C761B293C39D87C3 /* BoardView.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		E8C5B2E78D43A8D2E6DD4FFD /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CCD85F2E1E58B6DB61F968EB /* BYOAPISettingsView.swift */,
+				02DDD296D096F0F8C4113B95 /* ContactSupportView.swift */,
+				610FEB85900D573558DC7E51 /* ProfileView.swift */,
+				4D3FC43DEFF790047CFAB6DD /* WeeklyReportView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F9B24B1590666CA5E5448D6C /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+				DD6501DAB9223A01949DCD0E /* WishComposerView.swift */,
+				160EE9A4E07FAA6C55A7F59C /* WishComposerViewModel.swift */,
+			);
+			path = Composer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		058718B842F35B0DA07A9683 /* Moonwish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB1E27E5044CAFEB790AACC6 /* Build configuration list for PBXNativeTarget "Moonwish" */;
+			buildPhases = (
+				1CFFF70F8E77C2727299AC15 /* Sources */,
+				2EF5CACD2E91A0ED30BC93BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Moonwish;
+			packageProductDependencies = (
+			);
+			productName = Moonwish;
+			productReference = 9FB47F8BE35BE32E5788FF78 /* Moonwish.app */;
+			productType = "com.apple.product-type.application";
+		};
+		755C217BAE93162ED7D613E0 /* MoonwishTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F2A4BC3A349A9822D04824D /* Build configuration list for PBXNativeTarget "MoonwishTests" */;
+			buildPhases = (
+				EC9DFCDBD6416A4B670FEAB9 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BECB3462F08BB7DA761C3073 /* PBXTargetDependency */,
+			);
+			name = MoonwishTests;
+			packageProductDependencies = (
+			);
+			productName = MoonwishTests;
+			productReference = 07F03D1AF289E2620F9AE366 /* MoonwishTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC50C6A909F6C529E210539E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					058718B842F35B0DA07A9683 = {
+						DevelopmentTeam = JP4TN5PTS3;
+						ProvisioningStyle = Automatic;
+					};
+					755C217BAE93162ED7D613E0 = {
+						DevelopmentTeam = JP4TN5PTS3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 363603C6EC528094499BC6D1 /* Build configuration list for PBXProject "Moonwish" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3C4642AC9A2BEA5277366238;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				058718B842F35B0DA07A9683 /* Moonwish */,
+				755C217BAE93162ED7D613E0 /* MoonwishTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EF5CACD2E91A0ED30BC93BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9620A4945AF017D48A98060A /* Assets.xcassets in Resources */,
+				F74AB980EC172272839E0992 /* GLMProxySecret.txt in Resources */,
+				552118273B678E0E913B678C /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CFFF70F8E77C2727299AC15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA969B1FA02F98BE59948B24 /* AIEngineRouter.swift in Sources */,
+				3072BC4C06E94AB69871F1DD /* AIService.swift in Sources */,
+				036EE46D3E2D3B48E4FA7D99 /* AppConfig.swift in Sources */,
+				7AC434F8EA81A6EB5FE0355A /* AppleIntelligenceService.swift in Sources */,
+				05E069A5302E63B40CD4D49E /* AudioRenderer.swift in Sources */,
+				CC20BB9A179C66CBA48E49D5 /* BYOAPISettingsView.swift in Sources */,
+				6C9A9056DB5C6DC5FA9C2FEF /* BoardView.swift in Sources */,
+				108948C83175F5141614FC2C /* CelebrationView.swift in Sources */,
+				C43E76A07490515F428B43B2 /* ChannelView.swift in Sources */,
+				B2334EFC05DAF1F5502E6AC1 /* CloudAIService.swift in Sources */,
+				D30BCA60D90B740C53BCA455 /* ContactSupportView.swift in Sources */,
+				A8682E4ACEE286B3BBC06AB9 /* DataStore.swift in Sources */,
+				748EB94C7CE5ECB46F6F419B /* ExportService.swift in Sources */,
+				C82149931FA4EDCC7F249B94 /* JournalView.swift in Sources */,
+				4E3AEFF45B6CA26F6962DB3D /* KeychainHelper.swift in Sources */,
+				94739CA41D6EC55EE7C53A98 /* MoonCanvas.swift in Sources */,
+				841A3C76E4EFE68CD5DE56D4 /* MoonPhaseCalculator.swift in Sources */,
+				518900F0BB81E4F33DDCCC09 /* MoonwishApp.swift in Sources */,
+				F66F22E9C75D1CE32024AC16 /* NotificationService.swift in Sources */,
+				661D60F7EEBBFB95C5B87A46 /* OnboardingView.swift in Sources */,
+				69B162D4111434EB1702C079 /* PaywallView.swift in Sources */,
+				31B16EFD5CBBC9D8E24007E6 /* PlaybackService.swift in Sources */,
+				A3C81C394E53FF18F0291BCB /* PlayerView.swift in Sources */,
+				09867DB0AB6E47D154647248 /* PresetCatalog.swift in Sources */,
+				7992E6288F67148B23DE48F2 /* PresetPlayback.swift in Sources */,
+				67A30231BA49CA3D0F479369 /* ProfileView.swift in Sources */,
+				A1A0DD6E29708A2B07E40D1D /* PurchaseManager.swift in Sources */,
+				F4CD6A7DB6040DA123E68F32 /* Records.swift in Sources */,
+				409C65869210D1C36F70FE84 /* RootTabView.swift in Sources */,
+				7D2342D337146966F2671F77 /* SoundscapeLibrary.swift in Sources */,
+				2E3F1C64ED8DC56543B42241 /* SpeechDictation.swift in Sources */,
+				FECE7CF42EF89B15B716C808 /* StreakEngine.swift in Sources */,
+				469E0A02012B1FCCB88865C4 /* SupportService.swift in Sources */,
+				4FEAEA9C3209A22D0CF81B6D /* Theme.swift in Sources */,
+				38736C77396C0EA6C33F895A /* TonightView.swift in Sources */,
+				46161A65954E589C20E71E83 /* VoiceCatalog.swift in Sources */,
+				3360BC071199F3BA25C322D8 /* WeeklyReportView.swift in Sources */,
+				D79DA8D92F57564C4ED1E29F /* Wish.swift in Sources */,
+				E0A69C5A51F89ECEBE3FC7CB /* WishComposerView.swift in Sources */,
+				8135612736AFEA3814046C4A /* WishComposerViewModel.swift in Sources */,
+				2A9E5C6C678DAD4354F3CFEC /* WishDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC9DFCDBD6416A4B670FEAB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA8A5FFFF1A0C8A03608BE5 /* MoonwishCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BECB3462F08BB7DA761C3073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 058718B842F35B0DA07A9683 /* Moonwish */;
+			targetProxy = E1E6B0B5C16A119CBBB085C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		099CDAEFCDAB969B99411512 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Moonwish/Moonwish.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Moonwish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.Moonwish;
+				PRODUCT_NAME = Moonwish;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CFA7DEC6E586A47C236C4F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = JP4TN5PTS3;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		26BF56348CE012634C98539B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.MoonwishTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moonwish.app/Moonwish";
+			};
+			name = Release;
+		};
+		4F6F6E6AADB92956F75FCFF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Moonwish/Moonwish.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EXCLUDED_SOURCE_FILE_NAMES = GLMProxySecret.txt;
+				INFOPLIST_FILE = Moonwish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.Moonwish;
+				PRODUCT_NAME = Moonwish;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5D4E738BCE33ACA516F3FB12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.MoonwishTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moonwish.app/Moonwish";
+			};
+			name = Debug;
+		};
+		81669AB5F7A4A2323728F5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = JP4TN5PTS3;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		363603C6EC528094499BC6D1 /* Build configuration list for PBXProject "Moonwish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81669AB5F7A4A2323728F5F3 /* Debug */,
+				1CFA7DEC6E586A47C236C4F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6F2A4BC3A349A9822D04824D /* Build configuration list for PBXNativeTarget "MoonwishTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D4E738BCE33ACA516F3FB12 /* Debug */,
+				26BF56348CE012634C98539B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AB1E27E5044CAFEB790AACC6 /* Build configuration list for PBXNativeTarget "Moonwish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				099CDAEFCDAB969B99411512 /* Debug */,
+				4F6F6E6AADB92956F75FCFF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC50C6A909F6C529E210539E /* Project object */;
+}
