@@ -2,7 +2,7 @@ import Foundation
 import SwiftData
 
 enum DataStore {
-    static let container: ModelContainer = {
+    static let container: ModelContainer? = {
         let schema = Schema([
             Wish.self,
             AudioSession.self,
@@ -11,13 +11,13 @@ enum DataStore {
             BoardItem.self,
             StreakState.self
         ])
-        do {
-            let cloud = ModelConfiguration(schema: schema, cloudKitDatabase: .automatic)
-            return try ModelContainer(for: schema, configurations: [cloud])
-        } catch {
-            let local = ModelConfiguration(schema: schema, cloudKitDatabase: .none)
-            return try! ModelContainer(for: schema, configurations: [local])
+        if let cloud = try? ModelContainer(for: schema, configurations: [ModelConfiguration(schema: schema, cloudKitDatabase: .automatic)]) {
+            return cloud
         }
+        if let local = try? ModelContainer(for: schema, configurations: [ModelConfiguration(schema: schema, cloudKitDatabase: .none)]) {
+            return local
+        }
+        return try? ModelContainer(for: schema, configurations: [ModelConfiguration(schema: schema, isStoredInMemoryOnly: true)])
     }()
 
     static var iCloudAccountAvailable: Bool {
