@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moonwish — Manifest While You Sleep</title>
+<meta name="description" content="Tell the Moon. It listens. Speak one wish and Moonwish turns it into a personalized manifestation audio that plays all night.">
+<style>
+  :root {
+    --midnight: #0b1026;
+    --deep: #06090f;
+    --dusk: #1a1f3d;
+    --gold: #f5d9a8;
+    --halo: #eef2ff;
+    --mist: #aab3cc;
+    --card: rgba(255, 255, 255, 0.06);
+    --stroke: rgba(255, 255, 255, 0.12);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: radial-gradient(circle at 50% 0%, #1a1f3d 0%, #0b1026 45%, #06090f 100%);
+    color: var(--halo);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .stars {
+    position: fixed; inset: 0; pointer-events: none; opacity: 0.7;
+    background-image:
+      radial-gradient(1px 1px at 20% 30%, rgba(238,242,255,0.7), transparent),
+      radial-gradient(1px 1px at 70% 20%, rgba(238,242,255,0.5), transparent),
+      radial-gradient(1.5px 1.5px at 40% 60%, rgba(245,217,168,0.5), transparent),
+      radial-gradient(1px 1px at 85% 55%, rgba(238,242,255,0.6), transparent),
+      radial-gradient(1px 1px at 15% 75%, rgba(238,242,255,0.4), transparent),
+      radial-gradient(1px 1px at 60% 80%, rgba(238,242,255,0.5), transparent);
+  }
+  .wrap { position: relative; max-width: 980px; margin: 0 auto; padding: 0 24px 72px; }
+  .hero { text-align: center; padding: 88px 0 56px; }
+  .moon {
+    width: 132px; height: 132px; margin: 0 auto 36px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #fdf6e6 0%, var(--gold) 45%, #c9a86a 100%);
+    box-shadow: 0 0 60px rgba(245, 217, 168, 0.32), 0 0 140px rgba(245, 217, 168, 0.14);
+  }
+  h1 {
+    font-family: "New York", "Iowan Old Style", Georgia, serif;
+    font-size: clamp(2.6rem, 7vw, 4.2rem);
+    font-weight: 600; letter-spacing: -0.02em; margin: 0;
+  }
+  .tagline { color: var(--mist); font-size: 1.15rem; margin: 14px auto 34px; max-width: 620px; }
+  .cta {
+    display: inline-block; background: var(--gold); color: #0b1026; text-decoration: none;
+    font-weight: 700; padding: 16px 34px; border-radius: 999px; transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .cta:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(245, 217, 168, 0.24); }
+  .soon { background: rgba(255,255,255,0.08); color: var(--halo); border: 1px dashed rgba(255,255,255,0.25); }
+  .note { color: var(--mist); font-size: 0.85rem; margin-top: 14px; }
+  section { margin-top: 72px; }
+  h2 {
+    font-family: "New York", "Iowan Old Style", Georgia, serif;
+    font-size: clamp(1.6rem, 4vw, 2.3rem); font-weight: 600; text-align: center; margin: 0 0 10px;
+  }
+  .sub { text-align: center; color: var(--mist); margin: 0 auto 36px; max-width: 620px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+  .card {
+    background: var(--card); border: 1px solid var(--stroke); border-radius: 20px; padding: 24px;
+  }
+  .card .icon { font-size: 1.7rem; margin-bottom: 10px; }
+  .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--mist); font-size: 0.95rem; }
+  .pricing { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+  .price-card {
+    background: var(--card); border: 1px solid var(--stroke); border-radius: 20px;
+    padding: 28px 36px; min-width: 240px; text-align: center;
+  }
+  .price-card.featured { border-color: var(--gold); background: rgba(245, 217, 168, 0.08); }
+  .price-card h3 { margin: 0 0 8px; font-size: 1rem; color: var(--mist); font-weight: 500; }
+  .price { font-family: "New York", Georgia, serif; font-size: 2.4rem; font-weight: 600; margin: 0; color: var(--gold); }
+  .price span { font-size: 0.9rem; font-family: -apple-system, sans-serif; color: var(--mist); font-weight: 400; }
+  .price-detail { color: var(--mist); font-size: 0.88rem; margin: 10px 0 0; }
+  .badge {
+    display: inline-block; background: var(--gold); color: #0b1026; font-size: 0.72rem;
+    font-weight: 700; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 999px; margin-bottom: 10px;
+  }
+  .legal { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
+  .legal a {
+    color: var(--gold); text-decoration: none; font-size: 0.9rem;
+    border: 1px solid var(--stroke); padding: 10px 18px; border-radius: 12px;
+  }
+  .legal a:hover { border-color: var(--gold); }
+  footer { text-align: center; color: var(--mist); font-size: 0.85rem; margin-top: 80px; padding-top: 28px; border-top: 1px solid var(--stroke); }
+  footer a { color: var(--gold); text-decoration: none; }
+  @media (max-width: 600px) { .hero { padding-top: 62px; } .moon { width: 104px; height: 104px; } }
+</style>
+</head>
+<body>
+<div class="stars"></div>
+<div class="wrap">
+  <header class="hero">
+    <div class="moon"></div>
+    <h1>Moonwish</h1>
+    <p class="tagline">Tell the Moon. It listens. Speak one wish before bed, and Moonwish turns it into a personalized manifestation audio that stays with you all night.</p>
+    <a id="download-btn" href="https://apps.apple.com/us/app/id[APP_STORE_ID]?mt=8" class="cta soon">Coming Soon to the App Store</a>
+    <p class="note">Free to start. No account needed to listen.</p>
+  </header>
+
+  <section>
+    <h2>Why Moonwishers stay</h2>
+    <p class="sub">A bedtime ritual that actually feels like yours — not a generic playlist with someone else's voice.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🌙</div>
+        <h3>Made from your words</h3>
+        <p>One sentence, three quick taps, and a script written around your wish, your timing, and the way you want to feel.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎧</div>
+        <h3>An eight-hour sleep loop</h3>
+        <p>Seamless overnight audio with a gentle fade-out timer. It keeps playing with the screen off and lock-screen controls.</p>
+      </div>
+      <div class="card">
+        <div class="icon">☁️</div>
+        <h3>Never lose a wish</h3>
+        <p>SwiftData plus private CloudKit backup. Journal entries, streak, and sessions survive reinstalls and new devices.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔥</div>
+        <h3>A forgiving moon streak</h3>
+        <p>Missing a night does not erase your progress. A monthly grace card covers the slip, and the streak lives in iCloud.</p>
+      </div>
+      <div class="card">
+        <div class="icon">✨</div>
+        <h3>Time Capsule celebrations</h3>
+        <p>Set a date. When it happens, tap "It Happened!" and share a card with the wish and the moon from the night you asked.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔒</div>
+        <h3>Private by design</h3>
+        <p>No tracking, no ads. Audio is rendered on-device. Optional Face ID lock keeps your wishes and journal private.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Simple, honest pricing</h2>
+    <p class="sub">The free tier is genuinely usable. Plus adds the overnight ritual, the full soundscape library, and deeper cloud sessions.</p>
+    <div class="pricing">
+      <div class="price-card featured">
+        <span class="badge">7 DAYS FREE</span>
+        <h3>Plus Yearly</h3>
+        <p class="price">$29.99<span> / year</span></p>
+        <p class="price-detail">Then $29.99 per year. Cancel anytime.</p>
+      </div>
+      <div class="price-card">
+        <h3>Plus Monthly</h3>
+        <p class="price">$7.99<span> / month</span></p>
+        <p class="price-detail">Auto-renewing. Cancel anytime.</p>
+      </div>
+    </div>
+    <p class="sub" style="margin-top:26px">Also available: a $1.99 Cloud Booster that adds 30 cloud-generated sessions. Free users can bring their own API key for unlimited generation.</p>
+  </section>
+
+  <section>
+    <h2>Support & Legal</h2>
+    <div class="legal">
+      <a href="support.html">Support Center</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Moonwish. All rights reserved.</p>
+    <p>Moonwish is motivational and mindfulness content. It is not medical advice.</p>
+    <p>Contact: <a href="mailto:iocompile67692@gmail.com">iocompile67692@gmail.com</a></p>
+  </footer>
+</div>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  (function () {
+    var btn = document.getElementById('download-btn');
+    if (btn && btn.href.indexOf('[APP_STORE_ID]') !== -1) {
+      btn.href = '#';
+      btn.classList.add('soon');
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        alert('Moonwish is coming soon to the App Store.');
+      });
+    } else {
+      btn.classList.remove('soon');
+      btn.textContent = 'Download on the App Store';
+    }
+  })();
+</script>
+</body>
+</html>
