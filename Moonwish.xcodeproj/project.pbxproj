@@ -46,6 +46,7 @@
 		CC20BB9A179C66CBA48E49D5 /* BYOAPISettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD85F2E1E58B6DB61F968EB /* BYOAPISettingsView.swift */; };
 		D30BCA60D90B740C53BCA455 /* ContactSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DDD296D096F0F8C4113B95 /* ContactSupportView.swift */; };
 		D79DA8D92F57564C4ED1E29F /* Wish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B4B8F3C29675CF5F7A640 /* Wish.swift */; };
+		DA188DE1B900847A237CEC59 /* ScreenshotSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C04398BFC62E192ECEB780 /* ScreenshotSupport.swift */; };
 		E0A69C5A51F89ECEBE3FC7CB /* WishComposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6501DAB9223A01949DCD0E /* WishComposerView.swift */; };
 		F4CD6A7DB6040DA123E68F32 /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7A758C57E6987BE53D5C /* Records.swift */; };
 		F66F22E9C75D1CE32024AC16 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C2219E6BD729A798496F1A /* NotificationService.swift */; };
@@ -67,6 +68,7 @@
 /* Begin PBXFileReference section */
 		02DDD296D096F0F8C4113B95 /* ContactSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSupportView.swift; sourceTree = "<group>"; };
 		07F03D1AF289E2620F9AE366 /* MoonwishTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MoonwishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C04398BFC62E192ECEB780 /* ScreenshotSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotSupport.swift; sourceTree = "<group>"; };
 		160EE9A4E07FAA6C55A7F59C /* WishComposerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishComposerViewModel.swift; sourceTree = "<group>"; };
 		1951C4E9A77AF00106850C66 /* Moonwish.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Moonwish.entitlements; sourceTree = "<group>"; };
 		20177CEBAAFAA1993811D272 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				AB9633D6D6AD659551BF4EEC /* MoonwishApp.swift */,
+				11C04398BFC62E192ECEB780 /* ScreenshotSupport.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				A1A0DD6E29708A2B07E40D1D /* PurchaseManager.swift in Sources */,
 				F4CD6A7DB6040DA123E68F32 /* Records.swift in Sources */,
 				409C65869210D1C36F70FE84 /* RootTabView.swift in Sources */,
+				DA188DE1B900847A237CEC59 /* ScreenshotSupport.swift in Sources */,
 				7D2342D337146966F2671F77 /* SoundscapeLibrary.swift in Sources */,
 				2E3F1C64ED8DC56543B42241 /* SpeechDictation.swift in Sources */,
 				FECE7CF42EF89B15B716C808 /* StreakEngine.swift in Sources */,

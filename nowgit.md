@@ -17,6 +17,7 @@
 |------|-------|
 | **Apple App ID** | 6832170798 |
 | **App Store URL** | https://apps.apple.com/us/app/id6832170798?mt=8 |
+| **Custom Product Page** | https://apps.apple.com/us/app/moonwish/id6832170798?ppid=5c308df1-ab1c-48b6-ac1e-d3bb3ae2e240 |
 
 ## Policy Pages (Deployed from Main Repository /docs)
 
