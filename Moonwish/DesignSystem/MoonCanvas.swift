@@ -13,12 +13,15 @@ struct MoonCanvas: View {
 
             let glowRadius = min(side * 0.48, radius * (1.55 + 0.35 * glow))
             let glowRect = CGRect(x: center.x - glowRadius, y: center.y - glowRadius, width: glowRadius * 2, height: glowRadius * 2)
-            context.fill(Path(ellipseIn: glowRect), with: .radialGradient(
-                Gradient(colors: [Theme.gold.opacity(0.24 + 0.2 * glow), Theme.gold.opacity(0.0)]),
-                center: center,
-                startRadius: radius * 0.7,
-                endRadius: glowRadius
-            ))
+            context.drawLayer { layer in
+                layer.clip(to: Path(ellipseIn: glowRect))
+                layer.fill(Path(glowRect), with: .radialGradient(
+                    Gradient(colors: [Theme.gold.opacity(0.24 + 0.2 * glow), Theme.gold.opacity(0.0)]),
+                    center: center,
+                    startRadius: radius * 0.7,
+                    endRadius: glowRadius
+                ))
+            }
 
             context.fill(Path(ellipseIn: moonRect), with: .color(Theme.gold))
 

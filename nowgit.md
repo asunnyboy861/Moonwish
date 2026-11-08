@@ -11,6 +11,13 @@
 | **Primary Language** | Swift |
 | **GitHub Pages** | ✅ Enabled (from `/docs`) |
 
+## App Store
+
+| Item | Value |
+|------|-------|
+| **Apple App ID** | 6832170798 |
+| **App Store URL** | https://apps.apple.com/us/app/id6832170798?mt=8 |
+
 ## Policy Pages (Deployed from Main Repository /docs)
 
 | Page | URL | Status |

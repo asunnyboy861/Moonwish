@@ -82,8 +82,7 @@ struct PaywallView: View {
             featureRow(icon: "waveform", title: "All 21 soundscapes", detail: "Theta, 432 Hz, rain, ocean, lo-fi, and more.")
             featureRow(icon: "cloud.fill", title: "30 deep cloud sessions each month", detail: "Richer scripts through the Moonwish cloud engine.")
             featureRow(icon: "person.wave.2.fill", title: "Personal Voice", detail: "Hear affirmations in your own voice.")
-            featureRow(icon: "arrow.down.circle.fill", title: "Offline downloads & full export", detail: "Keep every session and take your data with you.")
-            featureRow(icon: "sparkles", title: "Vision board with cloud vision", detail: "Let a photo become a personalized audio.")
+            featureRow(icon: "bolt.fill", title: "Cloud Booster anytime", detail: "Add 30 more cloud sessions for $1.99 whenever you need them.")
         }
         .moonCard()
     }
@@ -177,13 +176,13 @@ struct PaywallView: View {
                 .foregroundStyle(Theme.mist)
                 .multilineTextAlignment(.center)
 
-            if let message {
+            if let message = message, !ScreenshotMode.isActive {
                 StatusBanner(text: message, isError: isError)
             }
-            if let loadError = purchaseManager.loadError {
+            if let loadError = purchaseManager.loadError, !ScreenshotMode.isActive {
                 StatusBanner(text: loadError, isError: true)
             }
-            if purchaseManager.products.isEmpty && !purchaseManager.isLoading {
+            if purchaseManager.products.isEmpty && !purchaseManager.isLoading && !ScreenshotMode.isActive {
                 Text("Subscription options could not be loaded. Check your connection and try again.")
                     .font(.caption2)
                     .foregroundStyle(Theme.danger)

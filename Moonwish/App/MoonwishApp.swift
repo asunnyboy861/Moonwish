@@ -4,14 +4,28 @@ import SwiftUI
 struct MoonwishApp: App {
     @StateObject private var purchaseManager = PurchaseManager.shared
 
+    init() {
+        if ScreenshotScene.current != nil, let container = DataStore.container {
+            ScreenshotSeeder.seed(context: container.mainContext)
+        }
+    }
+
     var body: some Scene {
         WindowGroup {
             if let container = DataStore.container {
-                RootTabView()
-                    .environmentObject(purchaseManager)
-                    .modelContainer(container)
-                    .tint(Theme.gold)
-                    .preferredColorScheme(.dark)
+                if let scene = ScreenshotScene.current {
+                    ScreenshotRootView(scene: scene)
+                        .environmentObject(purchaseManager)
+                        .modelContainer(container)
+                        .tint(Theme.gold)
+                        .preferredColorScheme(.dark)
+                } else {
+                    RootTabView()
+                        .environmentObject(purchaseManager)
+                        .modelContainer(container)
+                        .tint(Theme.gold)
+                        .preferredColorScheme(.dark)
+                }
             } else {
                 StorageUnavailableView()
             }
